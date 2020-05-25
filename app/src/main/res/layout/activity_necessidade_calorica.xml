@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".necessidadeCalorica"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descubra agora sua"
+                    android:textAlignment="center"
+                    android:textSize="19dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Necessidade Calórica!"
+                    android:textAlignment="center"
+                    android:textSize="23dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="por DS2-M"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginBottom="15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+                
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:text="Feminino"
+                        android:checked="true"
+                        android:button="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_feminino_selector"
+                        android:textAlignment="center"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:text="Masculino"
+                        android:button="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        />
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Idade"
+                            android:textColor="@color/colorSecundaryText"
+                            android:textSize="13dp"
+                            android:paddingTop="3dp"
+                            android:paddingLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_left_white"
+                            />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edit_text_idade"
+                            android:layout_weight="1"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Altura (cm)"
+                            android:textColor="@color/colorSecundaryText"
+                            android:textSize="13dp"
+                            android:paddingTop="3dp"
+                            android:paddingLeft="10dp"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="-20dp"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edit_text_altura"
+                            />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Peso Atual (Kg)"
+                            android:textColor="@color/colorSecundaryText"
+                            android:textSize="13dp"
+                            android:paddingTop="3dp"
+                            android:paddingLeft="10dp"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="-20dp"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edit_text_peso"
+                            />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botao_circular"
+                    android:text="CALCULAR"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ao continuar você receberá informações"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="para sua saúde"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

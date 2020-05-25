@@ -15,18 +15,6 @@ class MainActivity : AppCompatActivity() {
         // *** Instanciando as classes referentes aos
         // *** componentes(View) da activity
 
-        val editTextPeso = findViewById<EditText>(R.id.edit_text_peso)
-        val editTextAltura = findViewById<EditText>(R.id.edit_text_altura)
 
-        val buttonCalcular = findViewById<Button>(R.id.button_calcular)
-
-        buttonCalcular.setOnClickListener {
-            val abrirActivityResultado = Intent(this, ResultadoActivity::class.java)
-
-            abrirActivityResultado.putExtra("peso", editTextPeso.text.toString())
-            abrirActivityResultado.putExtra("altura", editTextAltura.text.toString())
-
-            startActivity(abrirActivityResultado)
-        }
     }
 }
